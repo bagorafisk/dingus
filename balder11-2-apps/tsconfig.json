@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "ESNEXT",
+        "module": "ESNext",
+        "sourceMap": true,
+        "strict": true,
+        "removeComments": true,
+        // "moduleDetection": "force",
+        // "declaration": true
+    }
+}

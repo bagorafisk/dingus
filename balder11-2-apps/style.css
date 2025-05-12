@@ -1,0 +1,140 @@
+html {
+    height: 100%;
+    display: flex;
+    color-scheme: light dark;
+}
+
+body {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    gap: 0.25em;
+}
+
+#io {
+    font-family: consolas, monospace;
+
+    &:empty {
+        display: none;
+    }
+
+    .output {
+        line-break: anywhere;
+        white-space: pre-wrap;
+    }
+
+    .input {
+        white-space: pre-wrap;
+
+        >b {
+            line-break: anywhere;
+            outline: none;
+        }
+    }
+}
+
+#ui:empty {
+    display: none;
+}
+
+
+fieldset {
+    width: fit-content;
+    margin: 0.5em 0;
+}
+
+
+label {
+    display: flex;
+    width: fit-content;
+    margin: 0.5em 0;
+
+    &.top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &.right {
+        flex-direction: row-reverse;
+        gap: 0.25em;
+        justify-content: flex-end;
+    }
+
+    &.bottom {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    &.left {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+output {
+    display: inline-block;
+
+    &:empty {
+        border-left: solid;
+
+        &::before {
+            content: '\200B';
+        }
+    }
+
+}
+
+/* 10.0 */
+details>details {
+    margin-left: 1em;
+}
+
+#canvas {
+    flex: 1;
+    position: relative;
+
+    /* 10.0 */
+    background-color: linen;
+
+    canvas {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        min-height: 150px;
+    }
+}
+
+/* 10.0 */
+#console {
+    font-family: consolas, monospace;
+    position: fixed;
+    bottom: 4px;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid;
+    z-index: 1;
+    background-color: Canvas;
+
+    /* max-height: 4lh; */
+    overflow-y: auto;
+
+    div {
+        line-break: anywhere;       /* 11.0 */
+        white-space: pre-wrap;      /* 11.0 */
+    }
+
+    &:empty {
+        display: none;
+    }
+
+    .error {
+        color: red;
+    }
+
+    span {
+        color: GrayText;
+    }
+}

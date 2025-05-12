@@ -1,0 +1,36 @@
+{
+	"setUpdate": {
+		"scope": "typescript",
+		"prefix": "setupdate",
+		"body": [
+			"setUpdate(() => {",
+			"\t$1",
+			"})"
+		],
+	},
+	"Arrow Function": {
+		"scope": "typescript",
+		"prefix": "af",
+		"body": [
+			"() => {",
+			"\t$1",
+			"}"
+		],
+	},
+	"for(let i = 0; ...": {
+		"scope": "typescript",
+		"prefix": ["f", "fo", "for"],
+		"body": [
+			"for (let ${1:i} = ${2:0}; $1 < ${3:10}; $1 += ${4:1}) {",
+			"\t$0",
+			"}"
+		],
+	},
+	"await read": {
+		"scope": "typescript",
+		"prefix": "ar",
+		"body": [
+			"await read(\"$1\")"
+		],
+	},
+}
