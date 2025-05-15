@@ -9,5 +9,108 @@
 <body>
     <img src="balder11-2-apps/assets/dingus.jpeg.png" alt="">
     <h1>Dingus</h1>
+    <script>
+        const img = document.querySelector('img');
+        img.src = 'https://example.com/image.jpg';
+        img.alt = 'An example image';
+        img.addEventListener('load', () => {
+            console.log('Image loaded successfully');
+        });
+        img.addEventListener('error', () => {
+            console.error('Error loading image');
+        });
+        img.addEventListener('click', () => {
+            console.log('Image clicked');
+        });
+        img.addEventListener('mouseover', () => {
+            console.log('Mouse over image');
+        });
+        img.addEventListener('mouseout', () => {
+            console.log('Mouse out of image');
+        });
+        img.addEventListener('contextmenu', (event) => {
+            event.preventDefault();
+            console.log('Right-click on image');
+        });
+        img.addEventListener('dblclick', () => {
+            console.log('Double-click on image');
+        });
+        img.addEventListener('wheel', (event) => {
+            console.log('Mouse wheel event on image');
+        });
+        img.addEventListener('keydown', (event) => {
+            console.log('Key down event on image');
+        });
+        img.addEventListener('keyup', (event) => {
+            console.log('Key up event on image');
+        });
+        img.addEventListener('keypress', (event) => {
+            console.log('Key press event on image');
+        });
+        img.addEventListener('focus', () => {
+            console.log('Image focused');
+        });
+        img.addEventListener('blur', () => {
+            console.log('Image blurred');
+        });
+        img.addEventListener('resize', () => {
+            console.log('Image resized');
+        });
+        img.addEventListener('scroll', () => {
+            console.log('Image scrolled');
+        });
+        img.addEventListener('select', () => {
+            console.log('Image selected');
+        });
+        img.addEventListener('input', () => {
+            console.log('Input event on image');
+        });
+        img.addEventListener('change', () => {
+            console.log('Change event on image');
+        });
+        img.addEventListener('submit', () => {
+            console.log('Submit event on image');
+        });
+        img.addEventListener('reset', () => {
+            console.log('Reset event on image');
+        });
+        img.addEventListener('drag', () => {
+            console.log('Image dragged');
+        });
+        img.addEventListener('dragstart', () => {
+            console.log('Drag start on image');
+        });
+        img.addEventListener('dragend', () => {
+            console.log('Drag end on image');
+        });
+        img.addEventListener('dragenter', () => {
+            console.log('Drag enter on image');
+        });
+        img.addEventListener('dragover', () => {
+            console.log('Drag over image');
+        });
+        img.addEventListener('dragleave', () => {
+            console.log('Drag leave image');
+        });
+        img.addEventListener('drop', () => {
+            console.log('Drop on image');
+        });
+        img.addEventListener('copy', () => {
+            console.log('Copy event on image');
+        });
+        img.addEventListener('cut', () => {
+            console.log('Cut event on image');
+        });
+        img.addEventListener('paste', () => {
+            console.log('Paste event on image');
+        });
+        img.addEventListener('contextmenu', (event) => {
+            event.preventDefault();
+            console.log('Right-click on image');
+        });
+        img.addEventListener('touchstart', () => {
+            console.log('Touch start on image');
+        });
+  </script>
 </body>
 </html>
